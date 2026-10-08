@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsAccount" targetNamespace="http://tempuri.org/dsAccount.xsd" xmlns:mstns="http://tempuri.org/dsAccount.xsd" xmlns="http://tempuri.org/dsAccount.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="1" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="dbSogoConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="dbSogoConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SAMSBusinessLayer.Properties.Settings.GlobalReference.Default.dbSogoConnectionString1" Provider="System.Data.SqlClient" />
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="dbSogo2ConnectionString1" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="dbSogo2ConnectionString1 (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.SAMSBusinessLayer.Properties.Settings.GlobalReference.Default.dbSogo2ConnectionString1" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsAccount" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="dsAccount" msprop:Generator_UserDSName="dsAccount">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="uspGetCompanyStanding" msprop:Generator_TableClassName="uspGetCompanyStandingDataTable" msprop:Generator_TableVarName="tableuspGetCompanyStanding" msprop:Generator_RowChangedName="uspGetCompanyStandingRowChanged" msprop:Generator_TablePropName="uspGetCompanyStanding" msprop:Generator_RowDeletingName="uspGetCompanyStandingRowDeleting" msprop:Generator_RowChangingName="uspGetCompanyStandingRowChanging" msprop:Generator_RowEvHandlerName="uspGetCompanyStandingRowChangeEventHandler" msprop:Generator_RowDeletedName="uspGetCompanyStandingRowDeleted" msprop:Generator_RowClassName="uspGetCompanyStandingRow" msprop:Generator_UserTableName="uspGetCompanyStanding" msprop:Generator_RowEvArgName="uspGetCompanyStandingRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ACCOUNT_HEAD_ID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnACCOUNT_HEAD_ID" msprop:Generator_ColumnPropNameInRow="ACCOUNT_HEAD_ID" msprop:Generator_ColumnPropNameInTable="ACCOUNT_HEAD_IDColumn" msprop:Generator_UserColumnName="ACCOUNT_HEAD_ID" type="xs:long" />
+              <xs:element name="ACCOUNT_NAME" msprop:Generator_ColumnVarNameInTable="columnACCOUNT_NAME" msprop:Generator_ColumnPropNameInRow="ACCOUNT_NAME" msprop:Generator_ColumnPropNameInTable="ACCOUNT_NAMEColumn" msprop:Generator_UserColumnName="ACCOUNT_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Balance" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnBalance" msprop:Generator_ColumnPropNameInRow="Balance" msprop:Generator_ColumnPropNameInTable="BalanceColumn" msprop:Generator_UserColumnName="Balance" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="uspGetCompanyStanding2" msprop:Generator_TableClassName="uspGetCompanyStanding2DataTable" msprop:Generator_TableVarName="tableuspGetCompanyStanding2" msprop:Generator_TablePropName="uspGetCompanyStanding2" msprop:Generator_RowDeletingName="uspGetCompanyStanding2RowDeleting" msprop:Generator_RowChangingName="uspGetCompanyStanding2RowChanging" msprop:Generator_RowEvHandlerName="uspGetCompanyStanding2RowChangeEventHandler" msprop:Generator_RowDeletedName="uspGetCompanyStanding2RowDeleted" msprop:Generator_UserTableName="uspGetCompanyStanding2" msprop:Generator_RowChangedName="uspGetCompanyStanding2RowChanged" msprop:Generator_RowEvArgName="uspGetCompanyStanding2RowChangeEvent" msprop:Generator_RowClassName="uspGetCompanyStanding2Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="SKU_HIE_NAME" msdata:Caption="ACCOUNT_NAME" msprop:Generator_ColumnVarNameInTable="columnSKU_HIE_NAME" msprop:Generator_ColumnPropNameInRow="SKU_HIE_NAME" msprop:Generator_ColumnPropNameInTable="SKU_HIE_NAMEColumn" msprop:Generator_UserColumnName="SKU_HIE_NAME" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="100" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Balance" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnBalance" msprop:Generator_ColumnPropNameInRow="Balance" msprop:Generator_ColumnPropNameInTable="BalanceColumn" msprop:Generator_UserColumnName="Balance" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="uspGetCompanyStanding1" msprop:Generator_TableClassName="uspGetCompanyStanding1DataTable" msprop:Generator_TableVarName="tableuspGetCompanyStanding1" msprop:Generator_TablePropName="uspGetCompanyStanding1" msprop:Generator_RowDeletingName="uspGetCompanyStanding1RowDeleting" msprop:Generator_RowChangingName="uspGetCompanyStanding1RowChanging" msprop:Generator_RowEvHandlerName="uspGetCompanyStanding1RowChangeEventHandler" msprop:Generator_RowDeletedName="uspGetCompanyStanding1RowDeleted" msprop:Generator_UserTableName="uspGetCompanyStanding1" msprop:Generator_RowChangedName="uspGetCompanyStanding1RowChanged" msprop:Generator_RowEvArgName="uspGetCompanyStanding1RowChangeEvent" msprop:Generator_RowClassName="uspGetCompanyStanding1Row">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Head" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnHead" msprop:Generator_ColumnPropNameInRow="Head" msprop:Generator_ColumnPropNameInTable="HeadColumn" msprop:Generator_UserColumnName="Head" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="27" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Value" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnValue" msprop:Generator_ColumnPropNameInRow="Value" msprop:Generator_ColumnPropNameInTable="ValueColumn" msprop:Generator_UserColumnName="Value" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
